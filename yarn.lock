@@ -160,7 +160,7 @@
     "symbol-observable" "4.0.0"
     "uuid" "8.3.2"
 
-"@angular/common@~13.2.0", "@angular/common@13.2.7":
+"@angular/common@^13.0.0", "@angular/common@~13.2.0", "@angular/common@13.2.7":
   "integrity" "sha512-gSkv9aMz5q2ynIqSwgp5HEVVwlmpMYGVZFNZnEnezGY96Hza0eXlb/AYdqO7S3VQVvx+FXpvXP/eq/SsCw7rFA=="
   "resolved" "https://registry.npmjs.org/@angular/common/-/common-13.2.7.tgz"
   "version" "13.2.7"
@@ -190,14 +190,14 @@
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/core@~13.2.0", "@angular/core@13.2.7":
+"@angular/core@^13.0.0", "@angular/core@~13.2.0", "@angular/core@13.2.7":
   "integrity" "sha512-6J6C2ymIy+cZudock25BLEZFckhqFfXOSZw5YBIoAJuntV4hckLNfRTn/dxn5qmWF/Vw60NKdhV367YYejz6Gg=="
   "resolved" "https://registry.npmjs.org/@angular/core/-/core-13.2.7.tgz"
   "version" "13.2.7"
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/forms@~13.2.0":
+"@angular/forms@^13.0.0", "@angular/forms@~13.2.0":
   "integrity" "sha512-Did5ShmHTu52cljmNtMxUBUGEYHJ/FV5ZpKhbI7sd/VSFhXp9KWYUbfma0m7+CUJMGmpt6bmDaN0G2WS8Es1LQ=="
   "resolved" "https://registry.npmjs.org/@angular/forms/-/forms-13.2.7.tgz"
   "version" "13.2.7"
@@ -1263,6 +1263,13 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@ng-bootstrap/ng-bootstrap@^12.0.1":
+  "integrity" "sha512-q0N1Pi032kfqHdoHEu9RqSdmN0ycSKmlg0b4YaqgOxNcOfuI9bH3oSejCttcYhe0q5SPB0IgVDJ6M0MrcKVi6Q=="
+  "resolved" "https://registry.npmjs.org/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-12.0.1.tgz"
+  "version" "12.0.1"
+  dependencies:
+    "tslib" "^2.3.0"
+
 "@ngtools/webpack@13.2.6":
   "integrity" "sha512-N8SvRV91+/57TcAfbghc0k0tKCukw/7KqbDaLPAQTGFekJ4xMGT3elMzOyBXTH3Hvp5HL8/hiBt2tG04qiMf+w=="
   "resolved" "https://registry.npmjs.org/@ngtools/webpack/-/webpack-13.2.6.tgz"
@@ -1357,7 +1364,7 @@
     "node-gyp" "^8.2.0"
     "read-package-json-fast" "^2.0.1"
 
-"@popperjs/core@^2.10.2":
+"@popperjs/core@^2.10.2", "@popperjs/core@^2.11.4":
   "integrity" "sha512-q/ytXxO5NKvyT37pmisQAItCFqA7FD/vNb8dgaJy3/630Fsc+Mz9/9f2SziBoIZ30TJooXyTwZmhi1zjXmObYg=="
   "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.4.tgz"
   "version" "2.11.4"
@@ -5106,6 +5113,11 @@
   dependencies:
     "err-code" "^2.0.2"
     "retry" "^0.12.0"
+
+"propper@^1.0.4":
+  "integrity" "sha512-ZD102FjI36dmVf7i2NaDMEIsZrcd2eHBj2rtAHsxZPBMBEhYSOj9NyAhRP9wXjAiDKzYOpchq3iru50PquR5aQ=="
+  "resolved" "https://registry.npmjs.org/propper/-/propper-1.0.4.tgz"
+  "version" "1.0.4"
 
 "proxy-addr@~2.0.7":
   "integrity" "sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg=="

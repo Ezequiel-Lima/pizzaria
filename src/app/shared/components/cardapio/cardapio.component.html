@@ -1,85 +1,57 @@
 <div class="container">
   <div class="card-group">
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="../../../../assets/cardapio/img1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Pizza "Sabor 1"</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
           This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <p class="card-text"><small class="text-muted">Preço: 45$</small></p>
       </div>
     </div>
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="../../../../assets/cardapio/img2.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Pizza "Sabor 2"</h5>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <p class="card-text"><small class="text-muted">Preço 50$</small></p>
       </div>
     </div>
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="../../../../assets/cardapio/img1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Pizza "Sabor 3"</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
           This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <p class="card-text"><small class="text-muted">Preço 40$</small></p>
       </div>
     </div>
   </div>
   <div class="card-group">
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="../../../../assets/cardapio/img2.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Pizza "Sabor 4"</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
           This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <p class="card-text"><small class="text-muted">Preço 60$</small></p>
       </div>
     </div>
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="../../../../assets/cardapio/img1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Pizza "Sabor 5"</h5>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <p class="card-text"><small class="text-muted">Preço 55$</small></p>
       </div>
     </div>
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="../../../../assets/cardapio/img2.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Pizza "Sabor 6"</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
           This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-  <div class="card-group">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <p class="card-text"><small class="text-muted">Preço 50$</small></p>
       </div>
     </div>
   </div>
@@ -88,7 +60,33 @@
 <form>
   <div class="container">
     <div class="col text-center">
-      <button type="button" class="btn btn-outline-success mt-3 mb-3">Realizar Pedido</button>
+      <button type="button" class="btn btn-outline-success mt-3 mb-3" (click)="open(mymodalcardapio)">Realizar Pedido</button>
     </div>
   </div>
 </form>
+
+<ng-template #mymodalcardapio let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Pedido</h4>
+    <button type="button" class="btn btn-outline-dark" (click)="modal.dismiss('Cross click')">
+      <i class="fa-solid fa-close"></i>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="form-group">
+      <label class="col-form-label mt-2" for="inputDefault">Nome</label>
+      <input type="text" class="form-control" placeholder="Nome para contato" id="inputDefault">
+      <label class="col-form-label mt-2" for="inputDefault">E-mail</label>
+      <input type="text" class="form-control" placeholder="E-mail para contato" id="inputDefault">
+      <label class="col-form-label mt-2" for="inputDefault">Telefone</label>
+      <input type="text" class="form-control" placeholder="Telefone para contato" id="inputDefault">
+      <label for="exampleTextarea" class="form-label mt-2">Informe Seu Pedido</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Enviar</button>
+  </div>
+</ng-template>
+
+

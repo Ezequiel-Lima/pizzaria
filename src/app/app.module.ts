@@ -8,6 +8,7 @@ import { FooterComponent } from './core/footer/footer.component';
 import { ContentComponent } from './shared/components/content/content.component';
 import { CardapioComponent } from './shared/components/cardapio/cardapio.component';
 import { SobrenosComponent } from './shared/components/sobrenos/sobrenos.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SobrenosComponent } from './shared/components/sobrenos/sobrenos.compone
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
