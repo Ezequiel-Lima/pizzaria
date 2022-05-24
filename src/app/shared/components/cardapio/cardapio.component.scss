@@ -1,0 +1,17 @@
+:root {
+  --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
+}
+
+body {
+  background: rgb(67, 47, 29) !important;
+}
+
+.card {
+  background: rgb(198, 102, 23);
+  border: 1px solid #dd2476;
+  color: rgba(250, 250, 250, 0.8);
+  margin-bottom: 2rem;
+  max-width: 288px;
+  max-height: 384px;
+}
+
