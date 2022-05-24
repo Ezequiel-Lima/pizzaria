@@ -9,6 +9,7 @@ import { ContentComponent } from './shared/components/content/content.component'
 import { CardapioComponent } from './shared/components/cardapio/cardapio.component';
 import { SobrenosComponent } from './shared/components/sobrenos/sobrenos.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     NgbModule
   ],

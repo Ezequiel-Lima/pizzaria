@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Pizza } from '../../utils/Pizza';
+import { CardapioService } from './cardapio.service';
 
 @Component({
   selector: 'app-cardapio',
@@ -9,10 +11,19 @@ import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 export class CardapioComponent implements OnInit {
   closeResult: string = '';
 
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal, private cardapioService: CardapioService) { }
 
   ngOnInit(): void {
+    this.carregarObjetos();
   }
+
+  carregarObjetos(){
+    this.cardapioService.getAll().subscribe(res => {
+      console.log(res);
+    });
+  }
+
+
 
   //Modal
   open(content:any) {
